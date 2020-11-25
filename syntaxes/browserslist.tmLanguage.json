@@ -4,6 +4,9 @@
 	"patterns": [
 		{
 			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
 		}
 	],
 	"repository": {
@@ -13,6 +16,14 @@
 					"name": "comment.line.number-sign.browserslist",
 					"begin": "#",
 					"end": "\n"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.browserslist",
+					"match": "\\b(not|and|or|extends|,)\\b"
 				}
 			]
 		}
