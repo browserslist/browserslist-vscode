@@ -18,7 +18,7 @@
         }],
         "grammars": [{
             "language": "browserslist",
-            "scopeName": ".browserslistrc",
+            "scopeName": "text.browserslist",
             "path": "./syntaxes/browserslist.tmLanguage.json"
         }]
     }
