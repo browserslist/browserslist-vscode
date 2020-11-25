@@ -3,27 +3,16 @@
 	"name": "Browserslist",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
+			"include": "#comments"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.browserslist",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.browserslist",
-			"begin": "\"",
-			"end": "\"",
+		"comments": {
 			"patterns": [
 				{
-					"name": "constant.character.escape.browserslist",
-					"match": "\\\\."
+					"name": "comment.line.number-sign.browserslist",
+					"begin": "#",
+					"end": "\n"
 				}
 			]
 		}
