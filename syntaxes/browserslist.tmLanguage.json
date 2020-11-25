@@ -7,6 +7,9 @@
 		},
 		{
 			"include": "#keywords"
+		},
+		{
+			"include": "#headings"
 		}
 	],
 	"repository": {
@@ -24,6 +27,15 @@
 				{
 					"name": "keyword.control.browserslist",
 					"match": "\\b(not|and|or|extends|,)\\b"
+				}
+			]
+		},
+		"headings": {
+			"patterns": [
+				{
+					"name": "string.quoted.other.browserslist",
+					"begin": "\\[",
+					"end": "\\]"
 				}
 			]
 		}
