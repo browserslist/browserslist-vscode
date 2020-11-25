@@ -1,0 +1,25 @@
+{
+    "name": "browserslist",
+    "displayName": "browserslist",
+    "description": "Syntax highlight for browserslist files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "browserslist",
+            "aliases": ["Browserslist", "browserslist"],
+            "extensions": ["browserslistrc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "browserslist",
+            "scopeName": ".browserslistrc",
+            "path": "./syntaxes/browserslist.tmLanguage.json"
+        }]
+    }
+}
