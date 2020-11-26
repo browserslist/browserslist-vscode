@@ -1,0 +1,53 @@
+# Comment
+defaults
+
+# Not keyword
+not dead
+
+# Market share with %
+> 10%
+< 1.5% in US
+>= .5%
+
+# Rare queries
+maintained node versions
+supports es6-module
+
+# Extend keyword
+extends @company/browserslist-config
+
+# Direct versions
+Chrome 50
+Firefox ESR
+Safari TP
+OperaMini all
+
+# Browser names
+Android
+Baidu
+BlackBerry or bb
+Chrome
+ChromeAndroid or and_chr
+Edge
+Electron
+Explorer or ie
+ExplorerMobile or ie_mob
+Firefox or ff
+FirefoxAndroid or and_ff
+iOS or ios_saf
+Node
+Opera
+OperaMini or op_mini
+OperaMobile or op_mob
+QQAndroid or and_qq
+Safari
+Samsung
+UCAndroid or and_uc
+kaios
+
+# Block header
+[production]
+# and keyword
+Edge > 40 and Edge < 43
+# or/, keywords
+IE 11 or IE 10, ie 9

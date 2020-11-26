@@ -13,7 +13,7 @@
         "languages": [{
             "id": "browserslist",
             "aliases": ["Browserslist", "browserslist"],
-            "extensions": [".browserslistrc"],
+            "filenames": [".browserslistrc", "browserslist"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
