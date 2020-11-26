@@ -22,6 +22,29 @@ Firefox ESR
 Safari TP
 OperaMini all
 
+# Browser names
+Android
+Baidu
+BlackBerry or bb
+Chrome
+ChromeAndroid or and_chr
+Edge
+Electron
+Explorer or ie
+ExplorerMobile or ie_mob
+Firefox or ff
+FirefoxAndroid or and_ff
+iOS or ios_saf
+Node
+Opera
+OperaMini or op_mini
+OperaMobile or op_mob
+QQAndroid or and_qq
+Safari
+Samsung
+UCAndroid or and_uc
+kaios
+
 # Block header
 [production]
 # and keyword
