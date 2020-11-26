@@ -51,7 +51,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.browserslist",
-					"match": "\\b(not|and|or|extends|,)\\b"
+					"match": "(<=?|>=?|,|\\b(not|and|or|extends|in)\\b)"
 				}
 			]
 		},
