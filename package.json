@@ -2,7 +2,12 @@
     "name": "browserslist",
     "displayName": "browserslist",
     "description": "Syntax highlight for browserslist files",
-    "version": "0.0.1",
+    "version": "1.0.1",
+    "publisher": "webben",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/wspwebben/browserslist-highlight.git"
+    },
     "engines": {
         "vscode": "^1.51.0"
     },
