@@ -6,6 +6,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#version-numbers"
+		},
+		{
 			"include": "#percents"
 		},
 		{
@@ -25,6 +28,14 @@
 					"name": "comment.line.number-sign.browserslist",
 					"begin": "#",
 					"end": "\n"
+				}
+			]
+		},
+		"version-numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.browserslist",
+					"match": "(?i)\\b(\\d+|esr|tp|all)\\b"
 				}
 			]
 		},
