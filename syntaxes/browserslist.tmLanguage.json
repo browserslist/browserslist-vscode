@@ -6,6 +6,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#percents"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -22,6 +25,14 @@
 					"name": "comment.line.number-sign.browserslist",
 					"begin": "#",
 					"end": "\n"
+				}
+			]
+		},
+		"percents": {
+			"patterns": [
+				{
+					"name": "constant.numeric.browserslist",
+					"match": "\\d*0?\\.?\\d+%"
 				}
 			]
 		},
