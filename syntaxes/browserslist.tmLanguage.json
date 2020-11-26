@@ -35,7 +35,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.browserslist",
-					"match": "(?i)\\b(\\d+|esr|tp|all)\\b"
+					"match": "(?i)\\b(\\d+|esr|tp|all|dead)\\b"
 				}
 			]
 		},
