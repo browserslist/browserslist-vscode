@@ -14,7 +14,9 @@ maintained node versions
 supports es6-module
 
 # Extend keyword
+extends browserslist-config-mycompany
 extends @company/browserslist-config
+extends @company/browserslist-config-mycompany
 
 # Direct versions
 Chrome 50

@@ -19,6 +19,9 @@
 		},
 		{
 			"include": "#headings"
+		},
+		{
+			"include": "#configs"
 		}
 	],
 	"repository": {
@@ -69,6 +72,14 @@
 					"name": "string.quoted.other.browserslist",
 					"begin": "\\[",
 					"end": "\\]"
+				}
+			]
+		},
+		"configs": {
+			"patterns": [
+				{
+					"name": "string.unquoted.browserslist",
+					"match": "(\\bbrowserslist-config-.+$|@.+\\/browserslist-config(-.+)?$)"
 				}
 			]
 		}
