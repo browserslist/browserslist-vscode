@@ -4,6 +4,7 @@
     "description": "Syntax highlight for browserslist files",
     "version": "1.0.3",
     "publisher": "webben",
+    "icon": "icon.png",
     "repository": {
         "type" : "git",
         "url" : "https://github.com/wspwebben/browserslist-highlight.git"
