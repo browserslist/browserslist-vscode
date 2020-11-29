@@ -18,7 +18,7 @@
 			"include": "#browsers"
 		},
 		{
-			"include": "#headings"
+			"include": "#sections"
 		},
 		{
 			"include": "#configs"
@@ -66,12 +66,15 @@
 				}
 			]
 		},
-		"headings": {
+		"sections": {
 			"patterns": [
 				{
-					"name": "string.quoted.other.browserslist",
-					"begin": "\\[",
-					"end": "\\]"
+					"name": "keyword.control.browserslist",
+					"match": "(\\[|\\])"
+				},
+				{
+					"name": "entity.name.function.browserslist",
+					"match": "(?!\\[)(.+)(?=\\])"
 				}
 			]
 		},
