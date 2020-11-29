@@ -1,17 +1,15 @@
 # Comment
 defaults
 
-# Not keyword
+# not, and, or/, keywords`
 not dead
+Edge > 40 and Edge < 43
+IE 11 or IE 10, ie 9
 
 # Market share with %
 > 10%
 < 1.5% in US
 >= .5%
-
-# Rare queries
-maintained node versions
-supports es6-module
 
 # Extend keyword
 extends browserslist-config-mycompany
@@ -23,6 +21,22 @@ Chrome 50
 Firefox ESR
 Safari TP
 OperaMini all
+
+# Block header
+[production]
+> 1%
+ie 11
+
+[modern]
+last 1 chrome version
+last 1 firefox version
+
+[ssr]
+node 12
+
+# Rare queries
+maintained node versions
+supports es6-module
 
 # Browser names
 Android
@@ -46,10 +60,3 @@ Safari
 Samsung
 UCAndroid or and_uc
 kaios
-
-# Block header
-[production]
-# and keyword
-Edge > 40 and Edge < 43
-# or/, keywords
-IE 11 or IE 10, ie 9
