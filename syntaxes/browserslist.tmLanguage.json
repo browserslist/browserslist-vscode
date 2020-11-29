@@ -38,7 +38,11 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.browserslist",
-					"match": "(?i)\\b(\\d+|esr|tp|all|dead)\\b"
+					"match": "\\b\\d+\\b"
+				},
+				{
+					"name": "constant.numeric.browserslist",
+					"match": "(?i)\\b(esr|tp|all|dead|version)\\b"
 				}
 			]
 		},
@@ -54,7 +58,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.browserslist",
-					"match": "(<=?|>=?|,|\\b(not|and|or|extends|in)\\b)"
+					"match": "(<=?|>=?|,|\\b(not|and|or|extends|in|last)\\b)"
 				}
 			]
 		},
