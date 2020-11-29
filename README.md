@@ -1,6 +1,6 @@
-# browserslist extenstion for Visual Studio Code
+# browserslist extension for Visual Studio Code
 
-Syntax highlight extenstion for browserslist and .browserslistrc files.
+Syntax highlight [extension](https://marketplace.visualstudio.com/items?itemName=webben.browserslist) for browserslist and .browserslistrc files.
 
 [More about browserslist](https://github.com/browserslist/browserslist)
 
