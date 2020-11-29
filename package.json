@@ -2,7 +2,7 @@
     "name": "browserslist",
     "displayName": "browserslist",
     "description": "Syntax highlight for browserslist files",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "publisher": "webben",
     "icon": "icon.png",
     "scripts": {
