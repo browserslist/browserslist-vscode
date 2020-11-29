@@ -1,9 +1,16 @@
 # Change Log
 
-All notable changes to the "browserslist" extension will be documented in this file.
+## 1.0.4
+* Add browserslist icon
+* Change section name color
+* Change config names color
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 1.0.3
+* Fix image paths
 
-## [Unreleased]
+## 1.0.2
+* Add highlight for external configs
 
-- Initial release
+## 1.0.1
+* Initial release
+* Basic syntax highlighting
