@@ -73,7 +73,7 @@
 		"sections": {
 			"patterns": [
 				{
-					"name": "keyword.control.browserslist",
+					"name": "constant.character.browserslist",
 					"match": "(\\[|\\])"
 				},
 				{
