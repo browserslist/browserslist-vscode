@@ -1,95 +1,95 @@
 {
-  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "Browserslist",
-  "patterns": [
-    {
-      "include": "#comments"
-    },
-    {
-      "include": "#version-numbers"
-    },
-    {
-      "include": "#percents"
-    },
-    {
-      "include": "#keywords"
-    },
-    {
-      "include": "#browsers"
-    },
-    {
-      "include": "#sections"
-    },
-    {
-      "include": "#configs"
-    }
-  ],
-  "repository": {
-    "comments": {
-      "patterns": [
-        {
-          "name": "comment.line.number-sign.browserslist",
-          "begin": "#",
-          "end": "\n"
-        }
-      ]
-    },
-    "version-numbers": {
-      "patterns": [
-        {
-          "name": "constant.numeric.browserslist",
-          "match": "\\b\\d+\\b"
-        },
-        {
-          "name": "constant.numeric.browserslist",
-          "match": "(?i)\\b(esr|tp|all|dead|version)\\b"
-        }
-      ]
-    },
-    "percents": {
-      "patterns": [
-        {
-          "name": "constant.numeric.browserslist",
-          "match": "\\d*0?\\.?\\d+%"
-        }
-      ]
-    },
-    "keywords": {
-      "patterns": [
-        {
-          "name": "keyword.control.browserslist",
-          "match": "(<=?|>=?|,|\\b(not|and|or|extends|in|last)\\b)"
-        }
-      ]
-    },
-    "browsers": {
-      "patterns": [
-        {
-          "name": "string.unquoted.browserslist",
-          "match": "(?i)\\b(Android|Baidu|BlackBerry|bb|Chrome|ChromeAndroid|and_chr|Edge|Electron|Explorer|ie|ExplorerMobile|ie_mob|Firefox|ff|FirefoxAndroid|and_ff|iOS|ios_saf|Node|Opera|OperaMini|op_mini|OperaMobile|op_mob|QQAndroid|and_qq|Safari|Samsung|UCAndroid|and_uc|kaios)\\b"
-        }
-      ]
-    },
-    "sections": {
-      "patterns": [
-        {
-          "name": "constant.character.browserslist",
-          "match": "(\\[|\\])"
-        },
-        {
-          "name": "entity.name.function.browserslist",
-          "match": "(?!\\[)(.+)(?=\\])"
-        }
-      ]
-    },
-    "configs": {
-      "patterns": [
-        {
-          "name": "entity.name.class.browserslist",
-          "match": "(\\bbrowserslist-config-.+$|@.+\\/browserslist-config(-.+)?$)"
-        }
-      ]
-    }
-  },
-  "scopeName": "text.browserslist"
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Browserslist",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#number-with-percents"
+		},
+		{
+			"include": "#version-numbers"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#browsers"
+		},
+		{
+			"include": "#sections"
+		},
+		{
+			"include": "#configs"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign.browserslist",
+					"begin": "#",
+					"end": "\n"
+				}
+			]
+		},
+		"number-with-percents": {
+			"patterns": [
+				{
+					"name": "constant.numeric.browserslist",
+					"match": "(\\d*\\.)?\\d+%"
+				}
+			]
+		},
+		"version-numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.browserslist",
+					"match": "\\b\\d+\\b"
+				},
+				{
+					"name": "constant.numeric.browserslist",
+					"match": "(?i)\\b(esr|tp|all|dead|version)\\b"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.browserslist",
+					"match": "(<=?|>=?|,|\\b(not|and|or|extends|in|last)\\b)"
+				}
+			]
+		},
+		"browsers": {
+			"patterns": [
+				{
+					"name": "string.unquoted.browserslist",
+					"match": "(?i)\\b(Android|Baidu|BlackBerry|bb|Chrome|ChromeAndroid|and_chr|Edge|Electron|Explorer|ie|ExplorerMobile|ie_mob|Firefox|ff|FirefoxAndroid|and_ff|iOS|ios_saf|Node|Opera|OperaMini|op_mini|OperaMobile|op_mob|QQAndroid|and_qq|Safari|Samsung|UCAndroid|and_uc|kaios)\\b"
+				}
+			]
+		},
+		"sections": {
+			"patterns": [
+				{
+					"name": "constant.character.browserslist",
+					"match": "(\\[|\\])"
+				},
+				{
+					"name": "entity.name.function.browserslist",
+					"match": "(?!\\[)(.+)(?=\\])"
+				}
+			]
+		},
+		"configs": {
+			"patterns": [
+				{
+					"name": "entity.name.class.browserslist",
+					"match": "(\\bbrowserslist-config-.+$|@.+\\/browserslist-config(-.+)?$)"
+				}
+			]
+		}
+	},
+	"scopeName": "text.browserslist"
 }
