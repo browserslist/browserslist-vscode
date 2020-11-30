@@ -1,34 +1,44 @@
 {
-    "name": "browserslist",
-    "displayName": "browserslist",
-    "description": "Syntax highlight for browserslist files",
-    "version": "1.0.5",
-    "publisher": "webben",
-    "icon": "icon.png",
-    "scripts": {
-        "publish": "npx vsce publish --githubBranch main"
-    },
-    "repository": {
-        "type" : "git",
-        "url" : "https://github.com/wspwebben/browserslist-highlight.git"
-    },
-    "engines": {
-        "vscode": "^1.51.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "browserslist",
+  "displayName": "browserslist",
+  "description": "Syntax highlight for browserslist files",
+  "version": "1.0.5",
+  "publisher": "webben",
+  "icon": "icon.png",
+  "scripts": {
+    "publish": "npx vsce publish --githubBranch main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wspwebben/browserslist-highlight.git"
+  },
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "browserslist",
+        "aliases": [
+          "Browserslist",
+          "browserslist"
+        ],
+        "filenames": [
+          ".browserslistrc",
+          "browserslist"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "browserslist",
-            "aliases": ["Browserslist", "browserslist"],
-            "filenames": [".browserslistrc", "browserslist"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "browserslist",
-            "scopeName": "text.browserslist",
-            "path": "./syntaxes/browserslist.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "browserslist",
+        "scopeName": "text.browserslist",
+        "path": "./syntaxes/browserslist.tmLanguage.json"
+      }
+    ]
+  }
 }
