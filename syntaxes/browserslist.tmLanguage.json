@@ -50,7 +50,11 @@
         },
         {
           "name": "constant.numeric.browserslist",
-          "match": "(?i)\\b(esr|tp|all|dead|versions?)\\b"
+          "match": "(?i)\\b(esr|tp|all|dead|unreleased|major|versions?)\\b"
+        },
+        {
+          "name": "constant.numeric.node.browserslist",
+          "match": "(?i)\\b(current|maintained?)\\b"
         }
       ]
     },
