@@ -81,6 +81,10 @@
     "sections": {
       "patterns": [
         {
+          "name": "entity.name.function.browserslist",
+          "match": "defaults"
+        },
+        {
           "name": "constant.character.browserslist",
           "match": "(\\[|\\])"
         },
