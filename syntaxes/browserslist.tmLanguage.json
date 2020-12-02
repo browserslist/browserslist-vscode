@@ -62,7 +62,11 @@
       "patterns": [
         {
           "name": "keyword.control.browserslist",
-          "match": "(<=?|>=?|,|\\b(not|and|or|extends|in|last)\\b)"
+          "match": "(<=?|>=?|,)"
+        },
+        {
+          "name": "keyword.control.browserslist",
+          "match": "\\b(not|and|or|extends|in|last|since|cover|supports)\\b"
         }
       ]
     },
