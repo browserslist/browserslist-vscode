@@ -70,7 +70,7 @@
       "patterns": [
         {
           "name": "string.unquoted.browserslist",
-          "match": "(?i)\\b(Android|Baidu|BlackBerry|bb|Chrome|ChromeAndroid|and_chr|Edge|Electron|Explorer|ie|ExplorerMobile|ie_mob|Firefox|ff|FirefoxAndroid|and_ff|iOS|ios_saf|Node|Opera|OperaMini|op_mini|OperaMobile|op_mob|QQAndroid|and_qq|Safari|Samsung|UCAndroid|and_uc|kaios)\\b"
+          "match": "(?i)\\b(Android|Baidu|BlackBerry|bb|Chrome|ChromeAndroid|and_chr|Edge|Electron|Explorer|ie|ExplorerMobile|ie_mob|Firefox|ff|FirefoxAndroid|and_ff|iOS|ios_saf|Node|Opera|OperaMini|op_mini|OperaMobile|op_mob|PhantomJS|QQAndroid|and_qq|Safari|Samsung|UCAndroid|and_uc|kaios)\\b"
         }
       ]
     },
