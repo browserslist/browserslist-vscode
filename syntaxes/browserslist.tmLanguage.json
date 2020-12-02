@@ -50,7 +50,7 @@
         },
         {
           "name": "constant.numeric.browserslist",
-          "match": "(?i)\\b(esr|tp|all|dead|version)\\b"
+          "match": "(?i)\\b(esr|tp|all|dead|versions?)\\b"
         }
       ]
     },
