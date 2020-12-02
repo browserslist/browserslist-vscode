@@ -1,7 +1,11 @@
 # Browserslist’s default browsers (> 0.5%, last 2 versions, Firefox ESR, not dead).
 defaults
 
+# take queries from browserslist-config-mycompany npm package.
+extends browserslist-config-mycompany
+
 # browsers versions selected by global usage statistics. >=, < and <= work too.
+[modern]
 > 5%
 # uses USA usage statistics. It accepts two-letter country code.
 > 5% in US
@@ -13,14 +17,16 @@ defaults
 > 5% in browserslist-config-mycompany stats
 
 # most popular browsers that provide coverage.
+[production]
 cover 99.5%
 # same as above, with two-letter country code.
 cover 99.5% in US
 # uses custom usage data.
 cover 99.5% in my stats
 
-# browsers without official support or updates for 24 months. Right now it is IE 10, IE_Mob 11, BlackBerry 10, BlackBerry 7, Samsung 4 and OperaMobile 12.1.
-dead
+# browsers without official support or updates for 24 months.
+# right now it is IE 10, IE_Mob 11, BlackBerry 10, BlackBerry 7, Samsung 4 and OperaMobile 12.1.
+not dead
 # the last 2 versions for each browser.
 last 2 versions
 # the last 2 versions of Chrome browser.
@@ -29,11 +35,13 @@ last 2 Chrome versions
 last 2 major versions or last 2 iOS major versions
 
 # selects latest Node.js 10.x.x or 10.4.x release.
+[ssr]
 node 10 and node 10.4 and node 10.4.1
 # Node.js version used by Browserslist right now.
 current node
 # all Node.js versions, which are still maintained by Node.js Foundation.
 maintained node versions
+
 # the iOS browser version 7 directly.
 iOS 7
 # versions of Firefox newer than 20. >=, < and <= work too. It also works with Node.js.
@@ -45,10 +53,10 @@ Firefox ESR
 
 # selects Safari versions similar to PhantomJS runtime.
 PhantomJS 2.1 and PhantomJS 1.9
-# take queries from browserslist-config-mycompany npm package.
-extends browserslist-config-mycompany
 
-# browsers with support for specific features. es6-module here is the feat parameter at the URL of the Can I Use page. A list of all available features can be found at caniuse-lite/data/features.
+# browsers with support for specific features
+# es6-module here is the feat parameter at the URL of the Can I Use page
+# list of all available features can be found at caniuse-lite/data/features.
 supports es6-module
 # all versions released since year 2015 (also since 2015-03 and since 2015-03-10).
 since 2015 or last 2 years
@@ -58,45 +66,6 @@ since 2015-03-10
 unreleased versions or unreleased Chrome versions
 # exclude browsers selected by previous queries.
 not ie <= 8
-
-
-# not, and, or/, keywords`
-not dead
-Edge > 40 and Edge < 43
-IE 11 or IE 10, ie 9
-
-# Market share with %
-> 10%
-< 1.5% in US
->= .5%
-
-# Extend keyword
-extends browserslist-config-mycompany
-extends @company/browserslist-config
-extends @company/browserslist-config-mycompany
-
-
-# Direct versions
-Chrome 50
-Firefox ESR
-Safari TP
-OperaMini all
-
-# Block header
-[production]
-> 1%
-ie 11
-
-[modern]
-last 3 chrome versions
-last 1 firefox version
-
-[ssr]
-node 12
-
-# Rare queries
-maintained node versions
-supports es6-module
 
 # Browser names
 Android
