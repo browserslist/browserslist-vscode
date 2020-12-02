@@ -6,10 +6,10 @@
       "include": "#comments"
     },
     {
-      "include": "#version-numbers"
+      "include": "#marketshares"
     },
     {
-      "include": "#percents"
+      "include": "#versions"
     },
     {
       "include": "#keywords"
@@ -34,7 +34,15 @@
         }
       ]
     },
-    "version-numbers": {
+    "marketshares": {
+      "patterns": [
+        {
+          "name": "constant.numeric.browserslist",
+          "match": "(\\d*\\.)?\\d+%"
+        }
+      ]
+    },
+    "versions": {
       "patterns": [
         {
           "name": "constant.numeric.browserslist",
@@ -43,14 +51,6 @@
         {
           "name": "constant.numeric.browserslist",
           "match": "(?i)\\b(esr|tp|all|dead|version)\\b"
-        }
-      ]
-    },
-    "percents": {
-      "patterns": [
-        {
-          "name": "constant.numeric.browserslist",
-          "match": "\\d*0?\\.?\\d+%"
         }
       ]
     },
