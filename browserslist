@@ -52,6 +52,8 @@ extends browserslist-config-mycompany
 supports es6-module
 # all versions released since year 2015 (also since 2015-03 and since 2015-03-10).
 since 2015 or last 2 years
+since 2015-03
+since 2015-03-10
 # alpha and beta versions.
 unreleased versions or unreleased Chrome versions
 # exclude browsers selected by previous queries.

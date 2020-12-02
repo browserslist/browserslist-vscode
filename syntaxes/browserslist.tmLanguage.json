@@ -9,6 +9,9 @@
       "include": "#marketshares"
     },
     {
+      "include": "#dates"
+    },
+    {
       "include": "#versions"
     },
     {
@@ -39,6 +42,18 @@
         {
           "name": "constant.numeric.browserslist",
           "match": "(\\d*\\.)?\\d+%"
+        }
+      ]
+    },
+    "dates": {
+      "patterns": [
+        {
+          "name": "constant.numeric.date.browserslist",
+          "match": "\\d{4}(-\\d{1,2}){0,2}"
+        },
+        {
+          "name": "constant.numeric.date.browserslist",
+          "match": "years?"
         }
       ]
     },
