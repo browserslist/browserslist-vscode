@@ -46,7 +46,7 @@
       "patterns": [
         {
           "name": "constant.numeric.browserslist",
-          "match": "\\b\\d+\\b"
+          "match": "\\b\\d+(.\\d+){0,2}\\b"
         },
         {
           "name": "constant.numeric.browserslist",

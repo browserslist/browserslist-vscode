@@ -29,7 +29,7 @@ last 2 Chrome versions
 last 2 major versions or last 2 iOS major versions
 
 # selects latest Node.js 10.x.x or 10.4.x release.
-node 10 and node 10.4
+node 10 and node 10.4 and node 10.4.1
 # Node.js version used by Browserslist right now.
 current node
 # all Node.js versions, which are still maintained by Node.js Foundation.
