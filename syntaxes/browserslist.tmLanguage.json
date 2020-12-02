@@ -86,7 +86,11 @@
       "patterns": [
         {
           "name": "entity.name.class.browserslist",
-          "match": "(\\bbrowserslist-config-.+$|@.+\\/browserslist-config(-.+)?$)"
+          "match": "@\\w+\\/browserslist-config(-.+)?"
+        },
+        {
+          "name": "entity.name.class.browserslist",
+          "match": "\\bbrowserslist-config-\\w+\\b"
         }
       ]
     }
